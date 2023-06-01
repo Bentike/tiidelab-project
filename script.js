@@ -21,7 +21,7 @@ const preview = document.getElementsByClassName("preview")[0];
 const overlayFirstName = document.getElementById("fn");
 const overlayMiddleName = document.getElementById("mn");
 const overlayLastName = document.getElementById("ln");
-const overlayBob = document.getElementById("dofb");
+const overlayDob = document.getElementById("dofb");
 const overlayStudentId = document.getElementById("sid");
 const overlayStreetAddress = document.getElementById("sa");
 const overlayCity = document.getElementById("ct");
@@ -35,11 +35,58 @@ const overlayLevel = document.getElementById("lv");
 const overlayLanguage = document.getElementById("lng");
 const overlayStartDate = document.getElementById("std");
 const overlayComment = document.getElementById("cmt");
+const add = document.getElementsByClassName("add")[0];
+const registrationForm = document.getElementById("registrationForm");
 
-submit.addEventListener("click", (event) => {
-    preview.style.display = "block";
+const mergeValues = () => {
+  overlayFirstName.textContent = firstName.value;
+  overlayMiddleName.textContent = middleName.value;
+  overlayLastName.textContent = lastName.value;
+  overlayDob.textContent = dob.value;
+  overlayStudentId.textContent = studentId.value;
+  overlayStreetAddress.textContent = streetAddress.value;
+  overlayCity.textContent = city.value;
+  overlayState.textContent = state.value;
+  overlayCountry.textContent = country.value;
+  overlayZipCode.textContent = zipCode.value;
+  overlayEmail.textContent = email.value;
+  overlayNumber.textContent = number.value;
+  overlayCourse.textContent = course.value;
+  overlayLevel.textContent = level.value;
+  overlayLanguage.textContent = language.value;
+  overlayStartDate.textContent = startDate.value;
+  overlayComment.textContent = comment.value;
+};
+
+const clearForm = () => {
+  firstName.value = "";
+  middleName.value = "";
+  lastName.value = "";
+  dob.value = "";
+  studentId.value = "";
+  streetAddress.value = "";
+  city.value = "";
+  state.value = "";
+  country.value = "";
+  zipCode.value = "";
+  email.value = "";
+  number.value = "";
+  course.value = "";
+  level.value = "";
+  language.value = "";
+  startDate.value = "";
+  comment.value = "";
+};
+
+registrationForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  preview.style.display = "block";
+  mergeValues();
 });
 
+add.addEventListener("click", (event) => event.preventDefault());
+
 close.addEventListener("click", () => {
-    preview.style.display = "none";
+  preview.style.display = "none";
+  clearForm();
 });
