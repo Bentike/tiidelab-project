@@ -1,3 +1,80 @@
 body{
-    background-color: yellow;
+    background-color: #fff;
+}
+
+.container{
+    width: 80%;
+    border: 25px solid pink;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.wrapper{
+    width: 99%;
+    margin: 0 auto;
+    padding: 0 5px;
+    border-left: 1px solid gray;
+     border-right: 1px solid gray;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-input{
+    flex-basis: 20em;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.header-input input{
+    width: 80%;
+}
+
+.dob-input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.dob-input input{
+    width: 30em;
+}
+
+#streetAddress{
+    width: 98%;
+}
+
+.city-wrap{
+    margin: 20px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+
+.city-wrap input{
+    width: 30rem;
+}
+
+.contact-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-wrap input{
+    width: 30rem;
 }

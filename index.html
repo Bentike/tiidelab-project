@@ -1,23 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Registration Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-       <div>
-          <img/>
+      <div class="wrapper">
+        <div class="header">
+          <img src="logo.png" alt="company logo" />
           <div>
-             <h1>Student Registration Form</h1>
-             <p>fill out the form to apply for the training courses. You can consider your application accepted after you receive a confirmation email.</p>
+            <h1>Student Registration Form</h1>
+            <p>
+              fill out the form to apply for the training courses. You can
+              consider your application accepted after you receive a
+              confirmation email.
+            </p>
           </div>
-       </div>
+        </div>
+        <form>
+          <h2>Student Information</h2>
+          <div class="name-section">
+            <div class="header-input">
+              <label for="firstName">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  name="firstName"
+                  id="firstName"
+                />
+              </label>
+            </div>
+            <div class="header-input">
+              <label for="middleName">
+                <input
+                  type="text"
+                  placeholder="Middle Name"
+                  required
+                  name="middleName"
+                  id="middleName"
+                />
+              </label>
+            </div>
+            <div class="header-input">
+              <label for="lastName">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                  name="lastName"
+                  id="lastName"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="dob-input">
+            <label for="dob">
+              <input
+                type="date"
+                placeholder="Date Of Birth"
+                required
+                name="dob"
+                id="dob"
+              />
+            </label>
+            <label for="studentId">
+              <input
+                type="text"
+                placeholder="Student Id"
+                required
+                name="studentId"
+                id="studentId"
+              />
+            </label>
+          </div>
+          <div class="address-section">
+            <h2>Address</h2>
+            <label for="streetAddress">
+              <input
+                type="text"
+                placeholder="Street Address"
+                required
+                name="streetAddress"
+                id="streetAddress"
+              />
+            </label>
+            <div class="city-wrap">
+              <label for="city">
+                <input
+                  type="text"
+                  placeholder="City"
+                  required
+                  name="city"
+                  id="city"
+                />
+              </label>
+              <label for="state">
+                <input
+                  type="text"
+                  placeholder="State / Province"
+                  required
+                  name="state"
+                  id="state"
+                />
+              </label>
+              <label for="country">
+                <input
+                  type="text"
+                  placeholder="Country"
+                  required
+                  name="country"
+                  id="country"
+                />
+              </label>
+              <label for="zip">
+                <input
+                  type="text"
+                  placeholder="Zip Code"
+                  required
+                  name="zip"
+                  id="zip"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-wrap">
+              <div>
+                <label for="email">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    name="email"
+                    id="email"
+                  />
+                </label>
+              </div>
+              <div>
+                <label for="number">
+                  <input
+                    type="text"
+                    placeholder=""
+                    required
+                    name="number"
+                    id="number"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    
- <script src="script.js"></script>   
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
