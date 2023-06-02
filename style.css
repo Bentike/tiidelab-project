@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #fff;
 }
@@ -145,6 +146,39 @@ textarea {
   bottom: 0;
   opacity: 0.9;
   display: none;
+}
+
+.preview-panel{
+    background-color: #fff;
+    width: 70%;
+    margin: 100px auto;
+    text-align: left;
+    padding: 30px 0;
+}
+
+#close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 90px;
+    right: 110px;
+    border: 4px solid red;
+    
+}
+
+.preview-panel p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 5px;
+     border: 1px solid gray;
+     background-color: rgba(223, 211, 211);
+}
+
+.preview-panel p span{
+    margin-left: 50px;
+    text-align: left;
+    /* border: 1px solid gray; */
 }
 
 .preview-panel {

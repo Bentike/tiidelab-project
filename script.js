@@ -39,23 +39,23 @@ const add = document.getElementsByClassName("add")[0];
 const registrationForm = document.getElementById("registrationForm");
 
 const mergeValues = () => {
-  overlayFirstName.textContent = firstName.value;
-  overlayMiddleName.textContent = middleName.value;
-  overlayLastName.textContent = lastName.value;
-  overlayDob.textContent = dob.value;
-  overlayStudentId.textContent = studentId.value;
-  overlayStreetAddress.textContent = streetAddress.value;
-  overlayCity.textContent = city.value;
-  overlayState.textContent = state.value;
-  overlayCountry.textContent = country.value;
-  overlayZipCode.textContent = zipCode.value;
-  overlayEmail.textContent = email.value;
-  overlayNumber.textContent = number.value;
-  overlayCourse.textContent = course.value;
-  overlayLevel.textContent = level.value;
-  overlayLanguage.textContent = language.value;
-  overlayStartDate.textContent = startDate.value;
-  overlayComment.textContent = comment.value;
+  overlayFirstName.textContent = `First-Name: ${firstName.value}`;
+  overlayMiddleName.textContent = `Middle-Name: ${middleName.value}`;
+  overlayLastName.textContent = `Last-Name: ${lastName.value}`;
+  overlayDob.textContent = `Date-of-Birth: ${dob.value}`;
+  overlayStudentId.textContent = `Student-ID: ${studentId.value}`;
+  overlayStreetAddress.textContent = `Street-Address: ${streetAddress.value}`;
+  overlayCity.textContent = `City: ${city.value}`;
+  overlayState.textContent = `State: ${state.value}`;
+  overlayCountry.textContent = `Country: ${country.value}`;
+  overlayZipCode.textContent = `Zip-Code: ${zipCode.value}`;
+  overlayEmail.textContent = `Email: ${email.value}`;
+  overlayNumber.textContent = `Number: ${number.value}`;
+  overlayCourse.textContent = `Course: ${course.value}`;
+  overlayLevel.textContent = `Level: ${level.value}`;
+  overlayLanguage.textContent = `Language: ${language.value}`;
+  overlayStartDate.textContent = `Start Date: ${startDate.value}`;
+  overlayComment.textContent = `Comment: ${comment.value}`;
 };
 
 const clearForm = () => {
