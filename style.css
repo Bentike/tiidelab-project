@@ -1,141 +1,151 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #fff;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    width: 80%;
-    border: 25px solid pink;
-    margin: 50px auto;
-    padding: 3px;
+body {
+  background-color: #fff;
 }
 
-.wrapper{
-    width: 99%;
-    margin: 0 auto;
-    padding: 0 5px;
-    border-left: 1px solid gray;
-     border-right: 1px solid gray;
+.container {
+  width: 80%;
+  border: 25px solid pink;
+  margin: 50px auto;
+  padding: 3px;
 }
 
-.header{
-    display: flex;
-    justify-content: space-evenly;
+.wrapper {
+  width: 99%;
+  margin: 0 auto;
+  padding: 0 5px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.header {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.name-section{
-    display: flex;
-    justify-content: space-between;
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
-.header-input{
-    flex-basis: 20em;
-    flex-grow: 1;
-    flex-shrink: 1;
+.name-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.header-input input{
-    width: 80%;
+.header-input input {
+  width: 300px;
+  padding: 5px;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-.dob-input{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 10px 0;
+.dob-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
-.dob-input input{
-    width: 30em;
+.dob-input input {
+  width: 400px;
+  padding: 5px;
+  font-size: 18px;
 }
 
-#streetAddress{
-    width: 98%;
+#streetAddress {
+  width: 98%;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 18px;
 }
 
-.city-wrap{
-    margin: 20px 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+.city-wrap {
+  margin: 20px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
 }
 
-.city-wrap input{
-    width: 30rem;
+.city-wrap input {
+  width: 480px;
+  padding: 5px;
+  font-size: 18px;
 }
 
-.contact-wrap{
-    display: flex;
-    justify-content: space-between;
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
 }
 
-.contact-wrap input{
-    width: 30rem;
+.contact-wrap input {
+  width: 480px;
+  padding: 5px;
+  font-size: 18px;
 }
 
-sup{
-    color: red;
+sup {
+  color: red;
 }
 
-.courses{
-    border: 1px solid gray;
-    margin-top: 15px;
-    background-color: rgb(243, 243, 243);
-    padding: 10px;
+.courses {
+  border: 1px solid gray;
+  margin-top: 15px;
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
 }
 
-.add{
-    background-color: rgb(210, 209, 209);
-    padding: 10px;
-    border: none;
-    margin-bottom: 10px;
+.add {
+  background-color: rgb(210, 209, 209);
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
 }
 
-select{
-    height: 30px;
-    background-color:  rgb(243, 243, 243);
-    padding: 0 5px;
+select {
+  height: 30px;
+  background-color: rgb(243, 243, 243);
+  padding: 0 5px;
 }
 
-.comment{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+.comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-textarea{
-    height: 100px;
-    margin-bottom: 20px;
+textarea {
+  height: 100px;
+  margin-bottom: 20px;
 }
 
-.submit{
-    background-color: rgba(0, 98, 255, 0.897);
-    border: none;
-    padding: 10px;
-    color: #fff;
-    font-weight: 700;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.submit {
+  background-color: rgba(0, 98, 255, 0.897);
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
-.preview{
-    background-color: #000;
-    width: 100%;
-    height: 150vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: none;
+.preview {
+  background-color: #000;
+  width: 100%;
+  height: 170vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.9;
+  display: none;
 }
 
 .preview-panel{
@@ -171,3 +181,177 @@ textarea{
     /* border: 1px solid gray; */
 }
 
+.preview-panel {
+  background-color: #fff;
+  width: 70%;
+  margin: 100px auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#close {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.preview-panel p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+  .main-header {
+    margin-left: 30px;
+  }
+  .main-header h1 {
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+  }
+
+  .main-header p {
+    font-size: 14px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header img {
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+  }
+
+  h2{
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .name-section{
+    width: 100%;
+  }
+  
+  .header-input{
+    width: 50%;
+  }
+
+  .header-input input{
+    width: 290px;
+    padding: 2px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .dob-input input{
+     width: 290px;
+     font-size: 16px;
+     padding: 2px;
+     margin: 5px;
+  }
+
+  .address-section input{
+    width: 290px;
+    margin-left: 5px;
+    padding: 2px;
+    font-size: 16px;
+  }
+
+  #streetAddress{
+    width: 96%;
+    margin-left: 5px;
+    padding: 2px;
+    font-size: 16px;
+  }
+
+ .contact-wrap{
+    grid-template-rows: 1fr 1fr;
+    
+ }
+
+ .contact-wrap input{
+     width: 300px;   
+     padding: 2px;
+     font-size: 16px;
+     margin-left: 5px;
+ }
+
+  
+ .preview{
+    height: 180vh;
+ }
+
+}
+
+@media screen and (max-width: 800px){
+      .header-input input{
+        width: 250px;
+     
+      }
+    
+      .dob-input input{
+         width: 250px;
+      }
+    
+      .address-section input{
+        width: 250px;
+       
+      }
+    
+     .contact-wrap input{
+         width: 250px; 
+     }     
+     
+      
+     .preview{
+        height: 180vh;
+     }
+}
+
+@media screen and (max-width: 690px){
+      
+    .header-input input{
+        width: 200px;
+     
+      }
+    
+      .dob-input input{
+         width: 200px;
+      }
+    
+      .address-section input{
+        width: 200px;
+       
+      }
+    
+     .contact-wrap input{
+         width: 200px; 
+     }        
+}
+
+@media screen and (max-width: 550px){
+    .header-input input{
+        width: 160px;
+     
+      }
+    
+      .dob-input input{
+         width: 160px;
+      }
+    
+      .address-section input{
+        width: 160px;
+       
+      }
+    
+     .contact-wrap input{
+         width: 160px; 
+     }    
+     
+     .preview{
+        height: 180vh;
+     }
+}
